@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div class="main">
-    <prova/>
+    <!-- <prova/> -->
   </div>
 </template>
 
