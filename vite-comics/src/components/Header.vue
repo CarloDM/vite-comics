@@ -2,7 +2,7 @@
 export default {
   name: 'Header',
   components: {},
-  data( ){
+  data(){
     return {
       logoImg : '../assets/vue-dc-comics-1/img/dc-logo.png',
       links : [
@@ -16,8 +16,7 @@ export default {
         {name: 'fans',          link:'#', active: false},
         {name: 'news',          link:'#', active: false},
         {name: 'shop',          link:'#', active: false},
-      ]
-      
+      ]    
     }
   }
 }
@@ -30,7 +29,7 @@ export default {
     </div>
 
     <div class="options debug">
-      <span v-for="(link, index) in links">{{ link.name }}</span>
+      <span v-for="(link, index) in links" :key="index" class="debug">{{ link.name }}</span>
 
     </div>
 
@@ -39,7 +38,8 @@ export default {
 </template>
 
 
-<style scoped>
+<!-- ----------------------------------------------- -->
+<style lang="scss" scoped>
 .header{
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,6 @@ export default {
 }
 
 .logo{
-
   width: 80px;
   height: 80px;
 }

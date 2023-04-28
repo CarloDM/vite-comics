@@ -30,22 +30,13 @@ export default {
   </main>  
 </template>
 
-<style >
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.debug{
-  background-color: rgba(255, 0, 0, 0.26);
-  border: 1px solid black;
-}
+<style lang="scss">
+@import './scss/general.scss';
 
 #main_wrapper{
   width: 100%;
   min-height: 300px;
-  /* background-color: black; */
+  font-family: 'Oswald', sans-serif;
 }
 
 

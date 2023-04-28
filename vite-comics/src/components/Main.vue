@@ -1,7 +1,8 @@
 <script>
+import prova from "../components/prova.vue";
 export default {
   name: 'Header',
-  components: {},
+  components: {prova},
   data( ){
     return {
       
@@ -11,7 +12,9 @@ export default {
 </script>
 
 <template>
-  <div class="main debug"></div>
+  <div class="main">
+    <prova/>
+  </div>
 </template>
 
 

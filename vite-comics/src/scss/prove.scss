@@ -1,0 +1,22 @@
+
+.unaclasse{
+  width: 10px;
+
+  .classedentrounaclasse{
+    height: 20px;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div1{
+  @include FlexCenter;
+}
+
