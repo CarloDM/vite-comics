@@ -11,8 +11,21 @@
   border: 1px solid black;
 }
 
+@mixin FlexCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #main_wrapper{
   width: 100%;
   min-height: 300px;
   font-family: 'Oswald', sans-serif;
+}
+
+.container{
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  max-width: 1400px;
 }

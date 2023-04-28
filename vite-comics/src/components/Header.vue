@@ -24,12 +24,16 @@ export default {
 
 <template>
   <div class="header debug">
-    <div class="logo debug">
-      <img src="../assets/vue-dc-comics-1/img/dc-logo.png" alt="">
-    </div>
+    <div class="container">
 
-    <div class="options debug">
-      <span v-for="(link, index) in links" :key="index" class="debug">{{ link.name }}</span>
+      <div class="logo debug">
+        <img src="../assets/vue-dc-comics-1/img/dc-logo.png" alt="">
+      </div>
+  
+      <div class="options debug">
+        <span v-for="(link, index) in links" :key="index" class="debug">{{ link.name }}</span>
+  
+      </div>
 
     </div>
 
@@ -40,11 +44,17 @@ export default {
 
 <!-- ----------------------------------------------- -->
 <style lang="scss" scoped>
+@use '../scss/general.scss' as *;
+
 .header{
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 80px;
+}
+
+.header .container {
+  @include FlexCenter
 }
 
 .logo{

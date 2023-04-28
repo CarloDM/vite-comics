@@ -1,9 +1,9 @@
 <script>
-import Header from './components/Header.vue';
-import Main from './components/Main.vue';
+import Header      from './components/Header.vue';
+import Main        from './components/Main.vue';
 import Merchandise from './components/Merchandise.vue';
-import links from './components/links.vue';
-import Footer from './components/Footer.vue';
+import links       from './components/links.vue';
+import Footer      from './components/Footer.vue';
 
 export default {
   name: 'app',
@@ -14,7 +14,6 @@ export default {
     links,
     Footer,
   }
-
 }
 </script>
 
@@ -32,7 +31,4 @@ export default {
 
 <style lang="scss">
 @import './scss/main.scss';
-
-
-
 </style>
