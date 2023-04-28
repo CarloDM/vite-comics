@@ -31,13 +31,8 @@ export default {
 </template>
 
 <style lang="scss">
-@import './scss/general.scss';
+@import './scss/main.scss';
 
-#main_wrapper{
-  width: 100%;
-  min-height: 300px;
-  font-family: 'Oswald', sans-serif;
-}
 
 
 </style>
