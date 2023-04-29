@@ -15,9 +15,28 @@ export default {
     <div class="container">
       
       <section class="debug">
-        <div class="col debug"></div>
-        <div class="col debug"></div>
-        <div class="col debug"></div>
+        <div class="col debug">
+          <h3>titolo</h3>
+          <ul>
+            <li v-for="(itemList,index) in 8">list item</li>
+          </ul>
+        </div>
+        <div class="col debug">
+          <h3>titolo</h3>
+          <ul>
+            <li v-for="(itemList,index) in 4">list item</li>
+          </ul>
+          <h3>titolo</h3>
+          <ul>
+            <li v-for="(itemList,index) in 4">list item</li>
+          </ul>
+        </div>
+        <div class="col debug">
+          <h3>titolo</h3>
+          <ul>
+            <li v-for="(itemList,index) in 11">list item</li>
+          </ul>
+        </div>
       </section>
       <div class="logo_bg debug"></div>
 
@@ -32,7 +51,7 @@ export default {
 .links{
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-image: url(../assets/vue-dc-comics-1/img/footer-bg.jpg);
   background-size: contain;
 }
@@ -52,6 +71,20 @@ section, .logo_bg {
 .col{
   width: calc(100% /5);
   height: 100%;
+
+  h3{
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      color: rgb(180, 180, 180);
+      font-size: 0.7rem;
+      margin-bottom: 3px;
+    }
+  }
 }
 
 

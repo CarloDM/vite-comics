@@ -38,7 +38,9 @@ export default {
   background-color: rgb(2, 130, 249);
 }
 .merch .container {
-  @include FlexCenter
+  @include FlexCenter;
+  width: 75%;
+  max-width: calc(1400px - 5%);
 }
 
 img{
