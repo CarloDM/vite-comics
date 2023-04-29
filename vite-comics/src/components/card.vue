@@ -1,10 +1,12 @@
 <script>
-import cards from '../data/dc-comics.json'
 export default {
   name:'card',
+  props:{
+    thumb: String,
+    title : String
+  },
   data(){
     return{
-      cards,
     }
   },
   methods:{
@@ -16,9 +18,9 @@ export default {
 </script>
 
 <template>
-  <div id="card" class="debug" v-for="(card,index) in cards" :key="index">
-    <img :src= card.thumb alt="" class="debug">
-    <h4>{{ card.series }}</h4>
+  <div id="card" class="debug">
+    <img :src='thumb' alt="" class="debug">
+    <h4>{{ title }}</h4>
   </div>
 </template>
 
