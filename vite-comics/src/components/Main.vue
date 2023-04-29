@@ -15,7 +15,7 @@ export default {
   <div class="main">
     <div class="container">
       <Card class="card" 
-      v-for="card in 12"/>
+      />
     </div>
   </div>
 </template>
@@ -26,16 +26,12 @@ export default {
 
 .main{
   width: 100%;
-  min-height: 120px;
+
 }
 
 .main .container {
-  @include FlexCenter;
+  display: flex;
   flex-wrap: wrap;
-}
-
-.card{
-
 }
 
 </style>
