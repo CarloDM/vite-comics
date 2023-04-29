@@ -69,7 +69,7 @@ section, .logo_bg {
 }
 
 .col{
-  width: calc(100% /5);
+  width: calc(100% /4);
   height: 100%;
 
   h3{
@@ -85,6 +85,14 @@ section, .logo_bg {
       margin-bottom: 3px;
     }
   }
+}
+
+.logo_bg {
+  background-image: url(../assets/vue-dc-comics-1/img/dc-logo-bg.png);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 
