@@ -1,8 +1,8 @@
 <script>
-import prova from "../components/prova.vue";
+import Card from "../components/card.vue";
 export default {
   name: 'Header',
-  components: {prova},
+  components: {Card},
   data( ){
     return {
       
@@ -14,8 +14,8 @@ export default {
 <template>
   <div class="main">
     <div class="container">
-
-    <!-- <prova/> -->
+      <Card class="card" 
+      v-for="card in 12"/>
     </div>
   </div>
 </template>
@@ -31,6 +31,11 @@ export default {
 
 .main .container {
   @include FlexCenter;
+  flex-wrap: wrap;
+}
+
+.card{
+
 }
 
 </style>
