@@ -1,12 +1,12 @@
 <script>
-import cards from '../data/dc-comics.json';
+import cardsSpec from '../data/dc-comics.json';
 import Card from "../components/card.vue";
 export default {
   name: 'Header',
   components: {Card},
   data( ){
     return {
-      cards,
+      cardsSpec,
     }
   }
 }
@@ -16,7 +16,7 @@ export default {
   <div class="main">
     <div class="container">
       <Card class="card" 
-      v-for="(card, index) in cards" :key="index"
+      v-for="(card, index) in cardsSpec" :key="index"
       :thumb="card.thumb"
       :title="card.series"
       />
